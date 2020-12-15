@@ -48,6 +48,11 @@ Example transaction feature `currency` and `country`
     ```
 5. Install [Dynamodb-admin]("https://github.com/99x/serverless-dynamodb-local") for AWS-like table explorer _(optional)_
 
+6. To test, get this in postman or browser.
+   ```
+   localhost:3000/dev/transactions/size/20?country=GH&currency=USDT&nextPageId=29790
+```
+
 #
 
 ## Problem
