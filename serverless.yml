@@ -1,3 +1,5 @@
+org: ensyex
+app: engineering-test
 service: engineering-test
 
 provider:
@@ -29,8 +31,9 @@ functions:
     handler: handler.GetPaginatedTransactions
     events:
       - http:
-          path: transactions
+          path: transactions/size/{size}
           method: get
+
 
 resources:
   Resources:

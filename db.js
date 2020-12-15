@@ -5,7 +5,4 @@ const dynamoDb = new AWS.DynamoDB.DocumentClient({
     endpoint: 'http://localhost:8000'
 });
 
-export async function scan() {
-    return dynamoDb.scan( { TableName: 'transactions' } ).promise();
-}
-
+export default dynamoDb;
